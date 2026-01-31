@@ -27,54 +27,6 @@ Models are evaluated out-of-sample using:
 
 The project was developed as part of a quantitative finance / financial econometrics case study.
 
-**Repository Structure**
-.
-├── README.md
-├── requirements.txt
-│
-├── data/                     # Raw and processed input data
-│   ├── sp500.csv
-│   ├── rv5_*.csv
-│   └── indeces/
-│
-├── results/
-│   └── plots/
-│       └── figures/
-│           ├── volatility_predictions_h1.png
-│           ├── volatility_predictions_h5.png
-│           └── volatility_predictions_h21.png
-│
-└── src/
-    ├── main.py               # One-click experiment runner
-    │
-    ├── data/
-    │   └── loader.py          # Data loading & preprocessing
-    │
-    ├── models/
-    │   ├── garch.py
-    │   ├── agarch.py
-    │   ├── realgarch.py
-    │   ├── realgarch_x.py
-    │   ├── har_rv.py
-    │   ├── filters.py
-    │   ├── likelihoods.py
-    │   └── utils.py
-    │
-    ├── forecasting/
-    │   ├── garch_forecasts.py
-    │   ├── realgarch_forecasts.py
-    │   ├── har_forecasts.py
-    │   └── vix_forecast.py
-    │
-    ├── experiments/
-    │   ├── in_sample.py
-    │   └── out_of_sample.py
-    │
-    └── analysis/
-        ├── exploratory_plots.py
-        ├── volatility_comparison.py
-        ├── forecast_plots.py
-        └── out_of_sample_analysis.py
 
 **How to Run**
 1. Install dependencies
